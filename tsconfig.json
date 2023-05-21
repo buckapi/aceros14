@@ -7,6 +7,9 @@
       "@assets/*": [
         "src/assets/*"
       ],
+      "@components/*": [
+        "src/app/components/*"
+      ],
       "@app/*": [
         "src/app/*"
       ],
