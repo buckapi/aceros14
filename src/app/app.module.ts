@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { MenuComponent } from './shared/menu/menu.component';
+import { HdrComponent } from './shared/hdr/hdr.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    HdrComponent
   ],
   imports: [
     NgxUsefulSwiperModule,
