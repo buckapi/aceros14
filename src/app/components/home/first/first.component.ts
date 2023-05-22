@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Yeoman } from '@app/services/yeoman.service';
 
 @Component({
   selector: 'app-first',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(
+    public yeoman:Yeoman
+  ) { }
+  setRoute(par:any){
+    let parametro=par;
+  this.yeoman.virtualRoute=parametro;
+  }
   ngOnInit(): void {
   }
 

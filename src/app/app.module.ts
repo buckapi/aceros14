@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { HdrComponent } from './shared/hdr/hdr.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { HdrComponent } from './shared/hdr/hdr.component';
     HdrComponent
   ],
   imports: [
+    HttpClientModule,
     NgxUsefulSwiperModule,
     BrowserModule,
     AppRoutingModule

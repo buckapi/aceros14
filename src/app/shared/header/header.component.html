@@ -3,11 +3,10 @@
         <div class="container">
             <div class="topbar-inner d-flex flex-wrap justify-content-between align-items-center w-100">
                 <ul class="topbar-info-list mb-0 list-unstyled d-inline-flex">
-                    <li><i class="thm-clr fas fa-map-marker-alt"></i>México</li>
-                    <li><i class="thm-clr far fa-envelope-open"></i>Email: 
-                        <a href="mailto:acortez@acerosymas.com.mx" title="Escribenos">acortez@acerosymas.com.mx</a></li>
+                    <li><i class="thm-clr fas fa-map-marker-alt"></i>Dirección: 8 a calle 215 Col Miguel Aleman, San Nicolás de los Garza, Mexico</li>
+                    <li><i class="thm-clr far fa-envelope-open"></i>Email: <a href="mailto:acortez@acerosymas.com.mx" title="Escribenos">acortez@acerosymas.com.mx</a></li>
                 </ul>
-               <!--  <ul class="topbar-links mb-0 list-unstyled d-inline-flex">                                <li><a href="javascript:void(0);" title="">Login</a></li>
+              <!--  <ul class="topbar-links mb-0 list-unstyled d-inline-flex">                                <li><a href="javascript:void(0);" title="">Login</a></li>
                 </ul> -->
             </div>
         </div>
@@ -16,25 +15,24 @@
         <div class="container">
             <div class="logo-info-bar-inner w-100 d-flex flex-wrap justify-content-between align-items-center">
                 <div class="logo-social d-inline-flex flex-wrap justify-content-between align-items-center">
-                    <div class="logo"><h1 class="mb-0"><a href="index.html" title="Home"><img class="img-fluid" src="assets/aceros/images/logo2.png" alt="Logo" srcset="assets/aceros/images/retina-logo2.png"></a></h1></div><!-- Logo -->
+                    <div class="logo"><h1 class="mb-0"><a (click)="setRoute('first')" title="Home"><img class="img-fluid" src="assets/aceros/images/logo2.png" alt="Logo" srcset="assets/aceros/images/retina-logo2.png"></a></h1></div><!-- Logo -->
                     <div class="social-links">
-                        <a href="javascript:void(0);" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="javascript:void(0);" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="javascript:void(0);" title="Skype" target="_blank"><i class="fab fa-skype"></i></a>
-                        <a href="javascript:void(0);" title="Vimeo" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                        <a href="https://web.facebook.com/aceroymas.com.mx?_rdc=1&_rdr" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/acerosymas1/" title="Instragram" target="_blank"><i class="fab fa-instagram"></i></a>
+                       
                     </div>
                 </div>
                 <div class="top-info-wrap d-inline-flex flex-wrap justify-content-between align-items-center">
                     <div class="call-us">
                         <i class="thm-clr flaticon-phone-call"></i>
                         <span>24/7 Atención al cliente</span>
-                        <strong>8136102422</strong>
+                        <strong> <a href="tel:8267690870"> 8267690870 </a> </strong>
                     </div>
                     <div class="add-cart">
                         <a href="#" title="">
                             <i class="thm-bg fas fa-shopping-basket"></i>
                             Carro
-                            <span class="d-block">02</span>
+                            <span class="d-block">0</span>
                         </a>
                     </div>
                 </div>                            
@@ -48,8 +46,8 @@
                     <ul class="mb-0 list-unstyled d-inline-flex">
                        
                         <li><a (click)="setRoute('first')" style="cursor: pointer;" title="">Inicio</a></li>
-                        <li><a href="about.html" title="">Nosotros</a></li>
-                        <li class="menu-item-has-children"><a href="javascript:void(0);" title="">Productos
+                        <li><a (click)="setRoute('about')" style="cursor: pointer;" title="">Nosotros</a></li>
+                        <li><a (click)="setRoute('shop')" style="cursor: pointer;"itle="">Tienda
                             </a>
                         </li>
                         <li><a (click)="setRoute('contact')" style="cursor: pointer;" title="">Contacto</a></li>

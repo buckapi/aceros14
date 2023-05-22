@@ -9,6 +9,7 @@ export const ScriptStore: Scripts[] = [
     {name: 'jquery', src: './assets/aceros/js/jquery.min.js'}, 
     {name: 'popper', src: './assets/aceros/js/popper.min.js'}, 
     {name: 'bootstrap', src: './assets/aceros/js/bootstrap.min.js'}, 
+    {name: 'select', src: './assets/aceros/js/bootstrap-select.min.js'}, 
     {name: 'wow', src: './assets/aceros/js/wow.min.js'}, 
     {name: 'counterup', src: './assets/aceros/js/counterup.min.js'}, 
     {name: 'fancybox', src: './assets/aceros/js/jquery.fancybox.min.js'}, 

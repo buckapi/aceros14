@@ -2,6 +2,8 @@ import { Component, AfterViewInit ,OnInit} from '@angular/core';
 import { ScriptService } from '@app/services/script.service';
 import { ScriptStore } from '@app/services/script.store';
 import { Yeoman } from '@app/services/yeoman.service';
+import { HttpClient } from '@angular/common/http';
+import { RestService } from '@app/services/rest.service';
 import { SwiperOptions } from 'swiper';
 import * as $ from 'jquery';
 @Component({
@@ -12,13 +14,14 @@ import * as $ from 'jquery';
 export class HomeComponent implements AfterViewInit {
 
   constructor(
+    public restService:RestService,
     public script:ScriptService,
     public yeoman:Yeoman
   ){
     this.script.load(
-
      'popper',
      'bootstrap',
+     'select',
      'wow',
      'counterup',
      'fancybox',
@@ -29,9 +32,14 @@ export class HomeComponent implements AfterViewInit {
      'custom'
           )
           .then(data => {
-            this.yeoman.isLoaded=true;
+            // this.yeoman.isLoaded=true;
           })
-          .catch(error => console.log(error));  
+          .catch(error => console.log(error)); 
+          
+   this.restService.getAllProducts().subscribe((response:any) => {
+    console.log(response);
+    this.yeoman.products=response;
+  }) ;          
   }
   config: SwiperOptions = {
     a11y: { enabled: true },
@@ -48,31 +56,9 @@ export class HomeComponent implements AfterViewInit {
     },
   };  
 
-loadScripts(){
-  this.script.load(
-
-   'popper',
-   'bootstrap',
-   'wow',
-   'counterup',
-   'fancybox',
-   'perfect-scrollbar',
-   'slick',
-   'particles',
-   'particle-int',
-   'custom'
-        )
-        .then(data => {
-          this.yeoman.isLoaded=true;
-        })
-        .catch(error => console.log(error));  
-}
 
   ngAfterViewInit(): void {
-    if(this.yeoman.isLoaded){
-      console.log("se vuleven a cargar");
-      this.loadScripts();
-    }
+
   } 
 
 }

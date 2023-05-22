@@ -6,12 +6,18 @@ import { HomeComponent } from './home.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { FirstComponent } from './first/first.component';
 import { ContactComponent } from './contact/contact.component';
+import { ShopComponent } from './shop/shop.component';
+import { DetailComponent } from './detail/detail.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     FirstComponent,
-    ContactComponent
+    ContactComponent,
+    ShopComponent,
+    DetailComponent,
+    AboutComponent
   ],
   imports: [
     NgxUsefulSwiperModule,
