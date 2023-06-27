@@ -43,7 +43,7 @@ export class RestService {
 	cierre:any;
 	serial:any;
 	transactions:any;
-	url:any="https://db.buckapi.us:9001";
+	url:any="https://db.corpcssca.com:9015";
 	members:any;
 	private urlAPIEmail = 'https://pcwdfcc885.execute-api.us-east-2.amazonaws.com/api/test';
 

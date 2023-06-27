@@ -39,7 +39,8 @@ export class HomeComponent implements AfterViewInit {
    this.restService.getAllProducts().subscribe((response:any) => {
     console.log(response);
     this.yeoman.products=response;
-  }) ;          
+  }) ;   4
+         
   }
   config: SwiperOptions = {
     a11y: { enabled: true },
