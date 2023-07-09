@@ -71,7 +71,7 @@
                                         <div class="serv-box w-100">
                                             <i class="thm-clr flaticon-car-parts"></i>
                                             <div class="serv-box-inner">
-                                                <h3 class="mb-0"><a  title="">Manufactura</a></h3>
+                                                <h3 class="mb-0"><a  title="">Comercialización</a></h3>
                                                 <p class="mb-0">Ofrecemos un servicio atento y eficaz, ya que nuestros trabajadores son profesionales altamente calificados en cada una de las distintas áreas.</p>
                                             </div>
                                         </div>
@@ -163,7 +163,7 @@
                         <div class="col-md-6 col-sm-12 col-lg-6">
                             <div class="solutions-content-wrap w-100">
                                 <h2 class="mb-0">Fabricación y comercialización de los siguientes productos</h2>
-                                <ul class="solutions-list mb-0 list-unstyled w-100">venta
+                                <ul class="solutions-list mb-0 list-unstyled w-100">
                                     <li>
                                         <i class="">1</i>
                                         <h4 class="mb-0">Varilla Corrugada de diferentes marcas nacionales</h4>
@@ -216,16 +216,17 @@
             </div>
             <div class="proj-wrap px-70 w-100">
                 <div class="row proj-caro">
-                    <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a href="shop.html" title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-1.jpg" alt="Project Image 1"></a></div>
+                    <div class="col-md-4 col-sm-6 col-lg-3" *ngFor="let category of categories;  let i = index">
+                        <div class="proj-box position-relative w-100" >
+                            <div class="proj-thumb overflow-hidden w-100">
+                                <a href=""  title=""><img class="img-fluid w-100" src="{{category.images}}" alt="categorias"></a></div>
                             <div class="proj-info position-absolute">
                                 <i class="flaticon-helmet"></i>
-                                <h3 class="mb-0"><a  title="">Laminas Galvanizada  <br> pintada y Zintroalum</a></h3>
+                                <h3 class="mb-0"><a  title="">{{category.name}}</a></h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-lg-3">
+                    <!-- <div class="col-md-4 col-sm-6 col-lg-3">
                         <div class="proj-box position-relative w-100">
                             <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-2.jpg" alt="Project Image 2"></a></div>
                             <div class="proj-info position-absolute">
@@ -240,15 +241,6 @@
                             <div class="proj-info position-absolute">
                                 <i class="flaticon-file"></i>
                                 <h3 class="mb-0"><a  title="">Varilla Corrugada<br> y acero de refuerzo.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-4.jpg" alt="Project Image 4"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-engineer-2"></i>
-                                <h3 class="mb-0"><a  title="">Perfil para Tablaroca  <br> y panel de yeso.</a></h3>
                             </div>
                         </div>
                     </div>
@@ -287,13 +279,13 @@
                                 <h3 class="mb-0"><a  title="">Ferretería, Herramientas <br> y accesorios para construcción.</a></h3>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div><!-- Projects Wrap -->
         </div>
     </section>
    
-    <section>
+ <!--<section>
         <div class="w-100 gray-layer pt-100 pb-100 opc1 overflow-hidden position-relative">
             <div class="fixed-bg zoom-anim back-blend-screen patern-bg gray-bg" style="background-image: url(assets/aceros/images/pattern-bg2.jpg);"></div>
             <div class="container">
@@ -308,7 +300,6 @@
                                 <div class="testi-info">
                                     <h3 class="mb-0">“Jonspond Mendela”</h3>
                                     <p class="mb-0">Donec scelerisque dolor id nunc dictum, nterdum mauris rhoncus. Aliquam at ultrices nunc. In sem fermentum at lorem in, porta mauris.</p>
-                                    <!-- <span class="d-inline-block text-color3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span class="thm-clr">(07 Review)</span></span> -->
                                 </div>
                             </div>
                         </div>
@@ -320,7 +311,6 @@
                                 <div class="testi-info">
                                     <h3 class="mb-0">“Baris Jonson”</h3>
                                     <p class="mb-0">Donec scelerisque dolor id nunc dictum, nterdum mauris rhoncus. Aliquam at ultrices nunc. In sem fermentum at lorem in, porta mauris.</p>
-                                    <!-- <span class="d-inline-block text-color3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><span class="thm-clr">(07 Review)</span></span> -->
                                 </div>
                             </div>
                         </div>
@@ -332,15 +322,14 @@
                                 <div class="testi-info">
                                     <h3 class="mb-0">“Jonson Baris”</h3>
                                     <p class="mb-0">Donec scelerisque dolor id nunc dictum, nterdum mauris rhoncus. Aliquam at ultrices nunc. In sem fermentum at lorem in, porta mauris.</p>
-                                    <!-- <span class="d-inline-block text-color3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><span class="thm-clr">(07 Review)</span></span> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div><!-- Tesyimonials Wrap -->
+                </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section>
         <div class="w-100 pt-100 pb-100 position-relative">
             <div class="container">
@@ -392,9 +381,9 @@
             <div class="container">
                 <div class="banner-wrap position-relative text-center w-100">
                     <div class="banner-inner d-inline-block">
-                        <h2 class="mb-0">MANUFACTURA</h2>
-                        <p class="mb-0">Proceso de creación y comercialización, quieres ver nuestras instalaciones. Fabricamos materiales de calidad para construcciónes resistentes y duraremos, nos aseguramos de mantener el control de calidad</p>
-                        <a class="thm-btn thm-bg" href="#" title="">Más info<i class="flaticon-arrow-pointing-to-right"></i></a>
+                        <h2 class="mb-0">Acero y Más</h2>
+                        <p class="mb-0">En Aceros y más ofrecemos a nuestros clientes y publico en general la atención y productos adaptados a sus necesidades, búscamos hacerles llegar productos de alta calidad para sus proyectos de construcción. </p>
+                        <a class="thm-btn thm-bg" href="tel:8267690870" target="_blank" title="">Atención al cliente<i class="flaticon-arrow-pointing-to-right"></i></a>
                     </div>
                 </div><!-- Banner Wrap -->
             </div>

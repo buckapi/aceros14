@@ -1,81 +1,67 @@
 import { Category } from "@app/interfaces/category";
 export const CATEGORIES: Category[] = [
-    {
-    name:'ACCESORIOS',
+  {
+    name:'Laminas Galvanizada',
+    idCategory:'ca000001',
     images:[
-      'assets/assetsdash/images/profile/profile.png'
-    ],
-    idCategory:'ca000001'
+      'assets/aceros/images/resources/proj-img1-1.jpg'
+    ]
   }, 
   {
-    name:'AMPERIMETRO',
+    name:'Ptr y tuberia',
+    idCategory:'ca000002',
     images:[
-      'assets/assetsdash/images/profile/profile.png'
-    ],
-    idCategory:'ca000002'
+      'assets/aceros/images/resources/proj-img1-2.jpg'
+    ]
   },
     {
-    name:'ARRANQUES',
+    name:'Varillas corrugada',
+    idCategory:'ca000003',
     images:[
-      'assets/assetsdash/images/profile/profile.png'
-    ],
-    idCategory:'ca000003'
-  },
-   {
-    name:'BOBINAS',
-    images:[
-      'assets/assetsdash/images/profile/profile.png'
-    ],
-    idCategory:'ca000004'
-  },
-
-  {
-    name:'BOMBAS',
-    images:[
-      'assets/assetsdash/images/profile/profile.png'
-    ],
-    idCategory:'ca000004'
+      'assets/aceros/images/resources/proj-img1-3.jpg'
+    ]
   },
   {
-    name:'FILTROS',
+    name:'Acero estructural',
+    idCategory:'ca000004',
     images:[
-      'assets/assetsdash/images/profile/profile.png'
-    ],
-    idCategory:'ca000004'
+      'assets/aceros/images/resources/proj-img1-5.jpg'
+    ]
   },
   {
-    name:'MODULOS',
+    name:'Laminas Negra',
+    idCategory:'ca000005',
     images:[
-      'assets/assetsdash/images/profile/profile.png'
-    ],
-    idCategory:'ca000004'
+      'assets/aceros/images/resources/proj-img1-6.jpg'
+    ]
   },
   {
-   name:'REP MOTOR',
+    name:'Cecas metálicas',
+    idCategory:'ca000006',
+    images:[
+      'assets/aceros/images/resources/proj-img1-7.jpg'
+    ]
+  },
+  {
+   name:'Ferretería',  
+   idCategory:'ca000007',
    images:[
-     'assets/assetsdash/images/profile/profile.png'
-   ],
-   idCategory:'ca000004'
+    'assets/aceros/images/resources/proj-img1-8.jpg'
+  ]
  },
  {
-  name:'PARTES ELECTRICAS',
+  name:'Herramientas',  
+  idCategory:'ca000008',
   images:[
-    'assets/assetsdash/images/profile/profile.png'
-  ],
-  idCategory:'ca000004'
+    'assets/aceros/images/resources/proj-img1-9.jpg'
+  ]
 },
 {
-  name:'VALVULAS',
+  name:'Accesorios para construcción',  
+  idCategory:'ca000009',
   images:[
-    'assets/assetsdash/images/profile/profile.png'
-  ],
-  idCategory:'ca000004'
-},
-{
-  name:'REPUESTOS',
-  images:[
-    'assets/assetsdash/images/profile/profile.png'
-  ],
-  idCategory:'ca000004'
-} 
+    'assets/aceros/images/resources/proj-img1-10.jpg'
+  ]
+}
+ 
 ];
