@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';
 import { DetailComponent } from './detail/detail.component';
 import { AboutComponent } from './about/about.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     ShopComponent,
     DetailComponent,
-    AboutComponent
+    AboutComponent,
+    CategoriesComponent
   ],
   imports: [
     NgxUsefulSwiperModule,

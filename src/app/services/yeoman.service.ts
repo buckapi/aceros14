@@ -8,5 +8,6 @@ export class Yeoman {
   virtualRoute:string="first";
   products:any=[];
   preview:any={};
+  product:any=[]=[];
   constructor() { }
 }

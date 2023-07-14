@@ -43,7 +43,7 @@ export class RestService {
 	cierre:any;
 	serial:any;
 	transactions:any;
-	url:any="https://db.corpcssca.com:9015";
+	url:any="https://db.corpcssca.com:9010";
 	members:any;
 	private urlAPIEmail = 'https://pcwdfcc885.execute-api.us-east-2.amazonaws.com/api/test';
 
@@ -119,7 +119,7 @@ export class RestService {
 		return this.http.get(url_api);
 	}
     getAllProducts(){
-		const url_api =  this.url+'/api/cars';
+		const url_api =  this.url+'/api/products';
        
 		return this.http.get(url_api);
 

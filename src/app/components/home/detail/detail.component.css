@@ -1,0 +1,12 @@
+.orange-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .orange-button:hover {
+    background-color: darkorange;
+  }

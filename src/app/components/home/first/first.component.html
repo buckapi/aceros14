@@ -203,87 +203,7 @@
         </div>
     </section>
     
-    <section>
-        <div class="w-100 pt-100 paralx-70 blue-layer opc7 position-relative">
-            <div class="fixed-bg" style="background-image: url(assets/aceros/images/parallax1.jpg);"></div>
-            <div class="container">
-                <div class="sec-title w-100">
-                    <div class="sec-title-inner d-inline-block">
-                        <span class="d-block thm-clr">Nuestros productos</span>
-                        <h3 class="mb-0">Categorias</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="proj-wrap px-70 w-100">
-                <div class="row proj-caro">
-                    <div class="col-md-4 col-sm-6 col-lg-3" *ngFor="let category of categories;  let i = index">
-                        <div class="proj-box position-relative w-100" >
-                            <div class="proj-thumb overflow-hidden w-100">
-                                <a href=""  title=""><img class="img-fluid w-100" src="{{category.images}}" alt="categorias"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-helmet"></i>
-                                <h3 class="mb-0"><a  title="">{{category.name}}</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-2.jpg" alt="Project Image 2"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-electric-tower"></i>
-                                <h3 class="mb-0"><a  title="">Ptr cuadrado<br> rectangular y tubería.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-3.jpg" alt="Project Image 3"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-file"></i>
-                                <h3 class="mb-0"><a  title="">Varilla Corrugada<br> y acero de refuerzo.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-5.jpg" alt="Project Image 5"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-worker"></i>
-                                <h3 class="mb-0"><a  title="">Acero  <br> estructural.</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-6.jpg" alt="Project Image 6"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-lighthouse"></i>
-                                <h3 class="mb-0"><a  title="">Lamina Negra  <br> y placa</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-7.jpg" alt="Project Image 7"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-worker-1"></i>
-                                <h3 class="mb-0"><a  title="">Material para  <br> cecas Metálicas</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-lg-3">
-                        <div class="proj-box position-relative w-100">
-                            <div class="proj-thumb overflow-hidden w-100"><a  title=""><img class="img-fluid w-100" src="assets/aceros/images/resources/proj-img1-8.jpg" alt="Project Image 8"></a></div>
-                            <div class="proj-info position-absolute">
-                                <i class="flaticon-construction"></i>
-                                <h3 class="mb-0"><a  title="">Ferretería, Herramientas <br> y accesorios para construcción.</a></h3>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div><!-- Projects Wrap -->
-        </div>
-    </section>
+<app-categories></app-categories>
    
  <!--<section>
         <div class="w-100 gray-layer pt-100 pb-100 opc1 overflow-hidden position-relative">
@@ -348,23 +268,23 @@
                             <div class="toggle w-100" id="toggle">
                                 <div class="toggle-item w-100">
                                     <h4 class="mb-0"><span>01.</span>Cual es el proceso de cotización?</h4>
-                                    <div class="toggle-content w-100"><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p></div>
+                                    <div class="toggle-content w-100"><p class="mb-0">Seleccione los productos que requiere y agregelos al carro, recibiremos su pedido y procesaremos el pago</p></div>
                                 </div>
                                 <div class="toggle-item w-100">
                                     <h4 class="mb-0"><span>02.</span>Cuales son las regiones que cubrimos para entregas a domicilio?</h4>
-                                    <div class="toggle-content w-100"><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p></div>
+                                    <div class="toggle-content w-100"><p class="mb-0">Las entregas las estamos realizando en la misma zona Nuevo Leon, México.</p></div>
                                 </div>
                                 <div class="toggle-item w-100">
                                     <h4 class="mb-0"><span>03.</span>Como es el proceso de pago?</h4>
-                                    <div class="toggle-content w-100"><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p></div>
+                                    <div class="toggle-content w-100"><p class="mb-0">Una vez que recibimos su pedido, le contactamos y procesamos el pago.</p></div>
                                 </div>
                                 <div class="toggle-item w-100">
                                     <h4 class="mb-0"><span>04.</span>Se debe cancelar cargo por entrega a domicilio?</h4>
-                                    <div class="toggle-content w-100"><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p></div>
+                                    <div class="toggle-content w-100"><p class="mb-0">Si, según la distancia y cantidad de material que compre</p></div>
                                 </div>
                                 <div class="toggle-item w-100">
                                     <h4 class="mb-0"><span>05.</span>En cuento tiempo recibo mi pedido?</h4>
-                                    <div class="toggle-content w-100"><p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p></div>
+                                    <div class="toggle-content w-100"><p class="mb-0">El mismo dia ya que tenemos en la bodega todos los materiales que usted pueda necesitar.</p></div>
                                 </div>
                             </div>
                         </div>

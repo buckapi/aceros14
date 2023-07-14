@@ -1,17 +1,45 @@
-<section>
+<!--<section>
     <div class="w-100 pt-170 pb-150 dark-layer3 opc7 position-relative">
         <div class="fixed-bg" style="background-image: url(assets/aceros/images/pagetop-bg.jpg);"></div>
         <div class="container">
             <div class="page-top-wrap w-100">
                 <h1 class="mb-0">Nuestra tienda</h1>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html" title="">Home</a></li>
+                    <li class="breadcrumb-item"><a  title="">Home</a></li>
                     <li class="breadcrumb-item active">Shop</li>
                 </ol>
-            </div><!-- Page Top Wrap -->
+            </div>
         </div>
     </div>
-</section>
+</section> -->
+<app-categories></app-categories>
+<!-- <section>
+    <div class="w-100 pt-100 paralx-70 blue-layer opc7 position-relative" style="padding-top: 20%;">
+        <div class="fixed-bg" style="background-image: url(assets/aceros/images/pagetop-bg.jpg);"></div>
+        <div class="container">
+            <div class="sec-title w-100">
+                <div class="sec-title-inner d-inline-block">
+                    <span class="d-block thm-clr">Nuestros productos</span>
+                    <h3 class="mb-0">Categorias</h3>
+                </div>
+            </div>
+        </div>
+        <div class="proj-wrap px-70 w-100">
+            <div class="row proj-caro">
+                <div class="col-md-4 col-sm-6 col-lg-3" *ngFor="let category of categories;  let i = index">
+                    <div class="proj-box position-relative w-100" >
+                        <div class="proj-thumb overflow-hidden w-100">
+                            <a href=""  title=""><img class="img-fluid w-100" src="{{category.images}}" alt="categorias"></a></div>
+                        <div class="proj-info position-absolute">
+                            <i class="flaticon-construction"></i>
+                            <h3 class="mb-0"><a  title="">{{category.name}}</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
 <section>
     <div class="w-100 pt-100 pb-100 position-relative">
         <div class="container">
@@ -22,8 +50,8 @@
                         <a href="javascript:void(0);" title=""><i class="fas fa-th-large"></i></a>
                         <a href="javascript:void(0);" title=""><i class="fas fa-th-list"></i></a>
                     </div>
-                    <!-- <div class="filter-inner">
-                        <span>Sort by:</span>
+                    <div class="filter-inner">
+                        <span>Categoria:</span>
                         <div class="slc-wrp">
                             <select>
                                 <option>Most Recent</option>
@@ -32,16 +60,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="filter-inner">
-                        <span>Show:</span>
-                        <div class="slc-wrp">
-                            <select>
-                                <option>11</option>
-                                <option>22</option>
-                                <option>33</option>
-                            </select>
-                        </div>
-                    </div> -->
+                   
                 </div>
                 <div class="pagination-wrap">
                     <ul class="pagination">
@@ -59,10 +78,10 @@
                         <div class="shop-box w-100">
                             <div class="shop-img w-100 position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="{{product.images[0]}}" alt="Shop Image 1">
-                                <a href="shop-detail.html" title="">Comprar<i class="fas fa-shopping-basket"></i></a>
+                                <a (click)="setRoute('detail')" title="">Comprar<i class="fas fa-shopping-basket"></i></a>
                             </div>
                             <div class="shop-info w-100">
-                                <h3 class="mb-0"><a href="shop-detail.html" title="">{{product.name}}</a></h3>
+                                <h3 class="mb-0"><a (click)="setRoute('detail')" title="">{{product.name}}</a></h3>
                                 <div class="shop-info-bottom d-flex flex-wrap justify-content-between w-100">
                                     <!-- <span class="rate"><i class="far fa-star on"></i><i class="far fa-star on"></i><i class="far fa-star off"></i><i class="far fa-star off"></i><i class="far fa-star off"></i></span> -->
                                     <span class="price"><ins>${{product.price}}</ins><del>$569.00</del></span>
@@ -74,33 +93,6 @@
                 </div>
             </div><!-- Shop Wrap -->
             <div class="shop-filters-pagination-wrap mt-50 d-flex flex-wrap justify-content-between w-100">
-                <div class="shop-filters d-inline-flex align-items-center">
-                    <div class="filter-inner">
-                        <span>Vista:</span>
-                        <a href="javascript:void(0);" title=""><i class="fas fa-th-large"></i></a>
-                        <a href="javascript:void(0);" title=""><i class="fas fa-th-list"></i></a>
-                    </div>
-                    <!-- <div class="filter-inner">
-                        <span>Sort by:</span>
-                        <div class="slc-wrp">
-                            <select>
-                                <option>Most Recent</option>
-                                <option>Recent</option>
-                                <option>Old</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-inner">
-                        <span>Show:</span>
-                        <div class="slc-wrp">
-                            <select>
-                                <option>11</option>
-                                <option>22</option>
-                                <option>33</option>
-                            </select>
-                        </div>
-                    </div> -->
-                </div>
                 <div class="pagination-wrap">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="javascript:void(0);" title=""><i class="fas fa-angle-left"></i></a></li>
