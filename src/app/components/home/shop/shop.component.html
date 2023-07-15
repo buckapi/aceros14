@@ -1,85 +1,38 @@
-<!--<section>
-    <div class="w-100 pt-170 pb-150 dark-layer3 opc7 position-relative">
-        <div class="fixed-bg" style="background-image: url(assets/aceros/images/pagetop-bg.jpg);"></div>
-        <div class="container">
-            <div class="page-top-wrap w-100">
-                <h1 class="mb-0">Nuestra tienda</h1>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a  title="">Home</a></li>
-                    <li class="breadcrumb-item active">Shop</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</section> -->
+
 <app-categories></app-categories>
-<!-- <section>
-    <div class="w-100 pt-100 paralx-70 blue-layer opc7 position-relative" style="padding-top: 20%;">
-        <div class="fixed-bg" style="background-image: url(assets/aceros/images/pagetop-bg.jpg);"></div>
-        <div class="container">
-            <div class="sec-title w-100">
-                <div class="sec-title-inner d-inline-block">
-                    <span class="d-block thm-clr">Nuestros productos</span>
-                    <h3 class="mb-0">Categorias</h3>
-                </div>
-            </div>
-        </div>
-        <div class="proj-wrap px-70 w-100">
-            <div class="row proj-caro">
-                <div class="col-md-4 col-sm-6 col-lg-3" *ngFor="let category of categories;  let i = index">
-                    <div class="proj-box position-relative w-100" >
-                        <div class="proj-thumb overflow-hidden w-100">
-                            <a href=""  title=""><img class="img-fluid w-100" src="{{category.images}}" alt="categorias"></a></div>
-                        <div class="proj-info position-absolute">
-                            <i class="flaticon-construction"></i>
-                            <h3 class="mb-0"><a  title="">{{category.name}}</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
+
 <section>
     <div class="w-100 pt-100 pb-100 position-relative">
         <div class="container">
             <div class="shop-filters-pagination-wrap d-flex flex-wrap justify-content-between w-100">
                 <div class="shop-filters d-inline-flex align-items-center">
+                    
                     <div class="filter-inner">
-                        <span>Vista:</span>
-                        <a href="javascript:void(0);" title=""><i class="fas fa-th-large"></i></a>
-                        <a href="javascript:void(0);" title=""><i class="fas fa-th-list"></i></a>
-                    </div>
-                    <div class="filter-inner">
-                        <span>Categoria:</span>
-                        <div class="slc-wrp">
-                            <select>
-                                <option>Most Recent</option>
-                                <option>Recent</option>
-                                <option>Old</option>
-                            </select>
+                        <button class="orange-button left-align" style="width: 100%; height: 100%;">
+                        <span class="category-label">Categoría:</span>
+                        <div class="select-wrapper">
+                          <select class="form-select" id="categorySelect">
+                            <option>Most Recent</option>
+                            <option>Recent</option>
+                            <option>Old</option>
+                          </select>
                         </div>
-                    </div>
+                        </button>
+                      </div>
+                      
                    
                 </div>
-                <div class="pagination-wrap">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title=""><i class="fas fa-angle-left"></i></a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="javascript:void(0);" title="">2</a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title="">3</a></li>
-                        <li class="page-item"><a class="page-link" href="javascript:void(0);" title=""><i class="fas fa-angle-right"></i></a></li>
-                    </ul>
-                </div>
+                <button class="orange-button left-align">  <a  title="">Ver todos</a>
+                </button>
             </div><!-- Shop Filters Pagination Wrap -->
             <div class="shop-wrap w-100">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-lg-3" *ngFor="let product of yeoman.products, let i = index "  style="cursor: pointer;"(click)="view(i)">
+                    <div class="col-6 col-lg-3" *ngFor="let product of yeoman.products, let i = index "  style="cursor: pointer;"(click)="view(i)" [hidden]="yeoman.categorySelected!=product.idBranch && yeoman.categorySelected!='first'">
                         <div class="shop-box w-100">
                             <div class="shop-img w-100 position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="{{product.images[0]}}" alt="Shop Image 1">
+                                <img class="img-fluid w-100 shadow-style fixed-size" src="{{product.images[0]}}" alt="Shop Image 1">
                                 <a (click)="setRoute('detail')" title="">Comprar<i class="fas fa-shopping-basket"></i></a>
-                            </div>
+                              </div>
                             <div class="shop-info w-100">
                                 <h3 class="mb-0"><a (click)="setRoute('detail')" title="">{{product.name}}</a></h3>
                                 <div class="shop-info-bottom d-flex flex-wrap justify-content-between w-100">
@@ -102,7 +55,7 @@
                         <li class="page-item"><a class="page-link" href="javascript:void(0);" title=""><i class="fas fa-angle-right"></i></a></li>
                     </ul>
                 </div>
-            </div><!-- Shop Filters Pagination Wrap -->
+            </div> <!-- Shop Filters Pagination Wrap -->
         </div>
     </div>
 </section>

@@ -24,7 +24,7 @@
                                 <div class="">
                                     <div   >
                                         <a  title="">
-                                            <img class="    " src="{{yeoman.preview.images[0]}}" alt="Shop Detail ">
+                                            <img src="{{yeoman.preview.images[0]}}" alt="aceros detalle">
                                         </a>
                                     </div>
                                     <!-- <div><a href="assets/aceros/images/resources/shop-detail-img1-2.jpg" data-fancybox="gallery" title=""><img class="img-fluid" src="assets/aceros/images/resources/shop-detail-img1-2.jpg" alt="Shop Detail Image 2"></a></div>
@@ -45,15 +45,15 @@
                             <div class="shop-detail-info w-100" >
                                 <h2 class="mb-0">{{yeoman.preview.name}}</h2>
                                 <span class="rate d-inline-block"><i class="far fa-star on"></i><i class="far fa-star off"></i><i class="far fa-star off"></i><i class="far fa-star off"></i><i class="far fa-star off"></i></span>
-                                <div class="review-link">
+                                <!-- <div class="review-link">
                                     <span class="d-inline-block">Interested: 05</span>
                                     <a href="javascript:void(0);" title="">564 Reviews(S)</a>
-                                </div>
+                                </div> -->
                                 <div class="price-stock d-flex flex-wrap justify-content-between align-items-center w-100">
                                     <span class="price"><ins>${{yeoman.preview.price}}</ins></span>
-                                    <span class="stock">Disponible:<i>In Stock</i></span>
+                                    <span class="stock">Categoria:<i></i></span>
                                 </div>
-                                <p class="mb-0">Nulla in lacus at nibh suscipit placerat. Pellentesque efficitur molestie velit ac pharetra. Sed accumsan augue nunc, ac hendrerit tortor egestas nec.Nulla in lacus at nibh suscipit placerat. Pellentesque efficitur molestie velit ac pharetra. Sed accumsan augue nunc, ac hendrerit tortor egestas nec.Nulla in lacus at nibh suscipit placerat. Pellentesque efficitur molestie velit ac pharetra. Sed accumsan augue nunc, ac hendrerit tortor egestas nec.</p>
+                                <p class="mb-0">{{yeoman.preview.description}}</p>
                                 <!-- <div class="detail-share w-100">
                                     <span>Share:</span>
                                     <a class="facebook-clr" href="javascript:void(0);" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -62,11 +62,7 @@
                                     <a class="skype-clr" href="javascript:void(0);" title="Skype" target="_blank"><i class="fab fa-skype"></i></a>
                                     <a class="rss-clr" href="javascript:void(0);" title="Rss" target="_blank"><i class="fas fa-rss"></i></a>
                                 </div> -->
-                              <button style="background-color: #ff5e15; color: white;
-                              border: none;
-                              padding: 10px 20px;
-                              font-size: 16px;
-                              cursor: pointer; border-radius: 5px;">  <a (click)="setRoute('cars')" title="">Agregar al carro<i class="fas fa-shopping-basket"></i></a>
+                              <button class="orange-button">  <a (click)="setRoute('cars')" title="">Agregar al carro<i class="fas fa-shopping-basket"></i></a>
                               </button>
                             </div>
                         </div>
@@ -74,11 +70,11 @@
                 </div>
                 <div class="shop-detail-tabs mt-50 w-100">
                     <ul class="nav nav-tabs">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#shop-detail1">Descripción</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="shop-detail.html#shop-detail2">Comments</a></li>
+                       <!-- <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#shop-detail1">Descripción</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="shop-detail.html#shop-detail2">Comments</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="shop-detail.html#shop-detail3">Review</a></li> -->
                     </ul>
-                    <div class="tab-content">
+                    <!--  <div class="tab-content">
                         <div class="tab-pane fade show active" id="shop-detail1">
                             <p class="mb-0">MOVIE STAR – Online Movie,Video & TV Show PSD Template is a the best design for 2017. any kinds of online video Template Based on Bootstrap, 12 column Responsive grid Template. “MOVIE STAR” is a smooth and colorful online video PSD Template, perfect suitable for , Businesses or Personal One page Template. It includes everything you need for the website development such as online Movie,Video & TV Show Template .PSD files are well organized also you can customize very easy . we have include 21 psd file for you. Please, don’t forget to leave a stars rating for this Template!</p>
                             <p class="mb-0">MOVIE STAR – Online Movie,Video & TV Show PSD Template is a the best design for 2017. any kinds of online video Template Based on Bootstrap, 12 column Responsive grid Template. “MOVIE STAR” is a smooth and colorful online video PSD Template, perfect suitable for , Businesses or Personal One page Template. It includes everything you need for the website development such as online Movie,Video & TV Show Template.</p>
@@ -154,9 +150,9 @@
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-            </div><!-- Shop Detail Wrap -->
+            </div>
         </div>
     </div>
 </section>

@@ -6,8 +6,9 @@ import { Injectable } from '@angular/core';
 export class Yeoman {
   isLoaded:Boolean=false;
   virtualRoute:string="first";
+  categorySelected:string="first";
   products:any=[];
   preview:any={};
-  product:any=[]=[];
+  categories:any={};
   constructor() { }
 }

@@ -11,10 +11,10 @@
         </div>
         <div class="proj-wrap px-70 w-100">
             <div class="row proj-caro">
-                <div class="col-md-4 col-sm-6 col-lg-3" *ngFor="let category of categories;  let i = index">
+                <div class="col-md-4 col-sm-6 col-lg-3" *ngFor="let category of categories;  let i = index" (click)="setCategory(i)">
                     <div class="proj-box position-relative w-100" >
                         <div class="proj-thumb overflow-hidden w-100">
-                            <a href=""  title=""><img class="img-fluid w-100" src="{{category.images}}" alt="categorias"></a></div>
+                            <a   title=""><img class="img-fluid w-100" src="{{category.images}}" alt="categorias"></a></div>
                         <div class="proj-info position-absolute">
                             <i class="flaticon-helmet"></i>
                             <h3 class="mb-0"><a  title="">{{category.name}}</a></h3>

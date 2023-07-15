@@ -17,6 +17,11 @@ export class CategoriesComponent implements OnInit {
   {
     this.categories=CATEGORIES
    }
+   setCategory(i:any){
+    let indice= i;
+    this.yeoman.categorySelected=this.categories[indice].idCategory;
+    this.yeoman.virtualRoute="shop";
+   }
   ngOnInit(): void {
   }
 
