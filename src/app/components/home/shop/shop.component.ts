@@ -32,8 +32,14 @@ categories:any;
     'particle-int',
     'custom'
          )
-    this.categories=CATEGORIES
-  }
+   
+  this.categories=CATEGORIES
+}
+setCategory(i:any){
+ let indice= i;
+ this.yeoman.categorySelected=this.categories[indice].idCategory;
+ this.yeoman.virtualRoute="shop";
+}
   setRoute(par:any){
     let parametro=par;
     this.yeoman.virtualRoute=parametro;
