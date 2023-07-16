@@ -11,6 +11,7 @@ import { DetailComponent } from './detail/detail.component';
 import { AboutComponent } from './about/about.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CarsComponent } from './cars/cars.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CarsComponent } from './cars/cars.component';
     DetailComponent,
     AboutComponent,
     CategoriesComponent,
-    CarsComponent
+    CarsComponent,
+    CheckoutComponent
   ],
   imports: [
     NgxUsefulSwiperModule,
