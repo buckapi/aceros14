@@ -14,7 +14,6 @@ export class ShopComponent implements OnInit {
 products:any=[];
 categories:any;
 showCategoryDropdown: boolean = false;
-  selectedCategory: any;
   constructor(
     public restService:RestService,
     public yeoman:Yeoman,
@@ -44,6 +43,7 @@ setCategory(i:any){
  let indice= i;
  this.yeoman.categorySelected=this.categories[indice].idCategory;
  this.yeoman.virtualRoute="shop";
+ this.showCategoryDropdown = false;
 }
   setRoute(par:any){
     let parametro=par;
