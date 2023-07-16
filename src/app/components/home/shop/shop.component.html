@@ -6,22 +6,20 @@
         <div class="container">
             <div class="shop-filters-pagination-wrap d-flex flex-wrap justify-content-between w-100">
                 <div class="shop-filters d-inline-flex align-items-center">
+                    
                     <div class="filter-inner">
                         <button class="orange-button left-align" style="width: 100%; height: 100%;">
                         <span class="category-label">Categoría:</span>
                         <div class="select-wrapper">
-                            <select class="form-select">
-                            <option disabled selected>Seleccionar categoría</option>
-                            <option *ngFor="let category of categories" (click)="category.expanded = true" *ngIf="!category.expanded">{{ category.name }}</option>
-                            <optgroup *ngFor="let category of categories" [label]="category.name" *ngIf="category.expanded">
-                                <!-- Aquí puedes agregar las opciones de subcategorías si las tienes -->
-                            </optgroup>
-                            </select>
+                          <select class="form-select"  *ngFor="let category of categories;  let i = index" (click)="setCategory(i)">
+                            <option>{{category.name}}</option>                           
+                          </select>
                         </div>
                         </button>
-                    </div>
+                      </div>
+                      
+                   
                 </div>
-                  
                 <button class="orange-button left-align">  <a  title="">Ver todos</a>
                 </button>
             </div><!-- Shop Filters Pagination Wrap -->
