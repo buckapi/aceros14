@@ -13,8 +13,8 @@ import { ScriptService } from '@app/services/script.service';
 export class ShopComponent implements OnInit {
 products:any=[];
 categories:any;
-showCategoryDropdown: boolean = false;
-selectedCategory: any=[];
+//showCategoryDropdown: boolean = false;
+//selectedCategory: any=[];
   constructor(
     public restService:RestService,
     public yeoman:Yeoman,
@@ -37,14 +37,14 @@ selectedCategory: any=[];
    
   this.categories=CATEGORIES
 }
-toggleCategoryDropdown() {
-  this.showCategoryDropdown = !this.showCategoryDropdown;
-}
+ //toggleCategoryDropdown() {
+ // this.showCategoryDropdown = !this.showCategoryDropdown;
+//}
 setCategory(i:any){
  let indice= i;
  this.yeoman.categorySelected=this.categories[indice].idCategory;
  this.yeoman.virtualRoute="shop";
- this.showCategoryDropdown = false;
+// this.showCategoryDropdown = false;
 }
   setRoute(par:any){
     let parametro=par;
