@@ -3,7 +3,6 @@ import { Yeoman } from '@app/services/yeoman.service';
 import { RestService } from '@app/services/rest.service';
 import { CATEGORIES } from '@app/services/categories.services';
 import { Category } from '@app/interfaces/category';
-import { ScriptService } from '@app/services/script.service';
 
 @Component({
   selector: 'app-shop',
@@ -17,23 +16,10 @@ categories:any;
 //selectedCategory: any=[];
   constructor(
     public restService:RestService,
-    public yeoman:Yeoman,
-    public script:ScriptService
+    public yeoman:Yeoman
   ) 
    
-  { this.script.load(
-    'popper',
-    'bootstrap',
-    'select',
-    'wow',
-    'counterup',
-    'fancybox',
-    'perfect-scrollbar',
-    'slick',
-    'particles',
-    'particle-int',
-    'custom'
-         )
+  { 
    
   this.categories=CATEGORIES
 }
