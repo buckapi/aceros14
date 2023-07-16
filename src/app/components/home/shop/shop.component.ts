@@ -35,10 +35,13 @@ categories:any;
    
   this.categories=CATEGORIES
 }
-setCategory(i:any){
- let indice= i;
- this.yeoman.categorySelected=this.categories[indice].idCategory;
- this.yeoman.virtualRoute="shop";
+setCategory(i: any) {
+  this.categories.forEach((category, index) => {
+    category.expanded = (index === i);
+  });
+
+  this.yeoman.categorySelected = this.categories[i].idCategory;
+  this.yeoman.virtualRoute = "shop";
 }
   setRoute(par:any){
     let parametro=par;
