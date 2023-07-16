@@ -14,6 +14,7 @@ export class ShopComponent implements OnInit {
 products:any=[];
 categories:any;
 showCategoryDropdown: boolean = false;
+selectedCategory: any;
   constructor(
     public restService:RestService,
     public yeoman:Yeoman,
