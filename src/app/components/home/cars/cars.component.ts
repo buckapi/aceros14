@@ -7,7 +7,7 @@ import { Yeoman } from '@app/services/yeoman.service';
   styleUrls: ['./cars.component.css']
 })
 export class CarsComponent implements OnInit {
-
+  products:any=[];
   constructor(
     public yeoman:Yeoman
   ) { }
