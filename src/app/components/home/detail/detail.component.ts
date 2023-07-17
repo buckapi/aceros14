@@ -8,6 +8,7 @@ import { Yeoman } from '@app/services/yeoman.service';
 })
 export class DetailComponent implements AfterViewInit {
   products:any=[];
+  categories:any;
   constructor(
     private cdr: ChangeDetectorRef,
     public yeoman:Yeoman

@@ -6,7 +6,7 @@
                 <h1 class="mb-0">Detalles de productos</h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a (click)="setRoute('first')" title="">Home</a></li>
-                    <li class="breadcrumb-item"><a (click)="setRoute('shop')" title="">Tienda</a></li>
+                    <li class="breadcrumb-item"><a (click)="setRoute('shop')" title="">Catalogo</a></li>
                     <li class="breadcrumb-item active">Detalles</li>
                 </ol>
             </div><!-- Page Top Wrap -->
@@ -20,20 +20,13 @@
                 <div class="shop-detail-inner w-100">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-lg-7">
-                            <div>
-                                <div>
-                                    <div>
+                            <div class="">
+                                <div class="">
+                                    <div   >
                                         <a  title="">
-                                            <ng-container *ngIf="yeoman && yeoman.preview && yeoman.preview.images && yeoman.preview.images.length > 0">
-                                                <img [src]="yeoman.preview.images[0]" alt="">
-                                              </ng-container>
-                                              
+                                            <img src="{{yeoman.preview.images[0]}}" alt="aceros detalle">
                                         </a>
                                     </div>
-                                    <!-- <div><a href="assets/aceros/images/resources/shop-detail-img1-2.jpg" data-fancybox="gallery" title=""><img class="img-fluid" src="assets/aceros/images/resources/shop-detail-img1-2.jpg" alt="Shop Detail Image 2"></a></div>
-                                    <div><a href="assets/aceros/images/resources/shop-detail-img1-3.jpg" data-fancybox="gallery" title=""><img class="img-fluid" src="assets/aceros/images/resources/shop-detail-img1-3.jpg" alt="Shop Detail Image 3"></a></div>
-                                    <div><a href="assets/aceros/images/resources/shop-detail-img1-4.jpg" data-fancybox="gallery" title=""><img class="img-fluid" src="assets/aceros/images/resources/shop-detail-img1-4.jpg" alt="Shop Detail Image 4"></a></div>
-                                    <div><a href="assets/aceros/images/resources/shop-detail-img1-5.jpg" data-fancybox="gallery" title=""><img class="img-fluid" src="assets/aceros/images/resources/shop-detail-img1-5.jpg" alt="Shop Detail Image 5"></a></div> -->
                                 </div>
                                 <!-- <div class="shop-detail-nav-caro mb-0 list-unstyled">
                                     <div><img class="img-fluid" src="assets/aceros/images/resources/shop-detail-nav-img1-1.jpg" alt="Shop Detail Nav Image 1"></div>
@@ -54,7 +47,7 @@
                                 </div> -->
                                 <div class="price-stock d-flex flex-wrap justify-content-between align-items-center w-100">
                                     <span class="price"><ins>${{yeoman.preview.price}}</ins></span>
-                                    <span class="stock">Categoria:<i></i></span>
+                                    <span class="stock">Categoria:<span>{{yeoman.preview.category}}</span> <i></i></span>
                                 </div>
                                 <p class="mb-0">{{yeoman.preview.description}}</p>
                                 <!-- <div class="detail-share w-100">

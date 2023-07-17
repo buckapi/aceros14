@@ -3,7 +3,6 @@ import { Yeoman } from '@app/services/yeoman.service';
 import { RestService } from '@app/services/rest.service';
 import { CATEGORIES } from '@app/services/categories.services';
 import { Category } from '@app/interfaces/category';
-import { ScriptService } from '@app/services/script.service';
 
 @Component({
   selector: 'app-shop',
@@ -13,27 +12,26 @@ import { ScriptService } from '@app/services/script.service';
 export class ShopComponent implements OnInit {
 products:any=[];
 categories:any;
+//showCategoryDropdown: boolean = false;
+//selectedCategory: any=[];
   constructor(
     public restService:RestService,
-    public yeoman:Yeoman,
-    public script:ScriptService
+    public yeoman:Yeoman
   ) 
    
-  { this.script.load(
-    'popper',
-    'bootstrap',
-    'select',
-    'wow',
-    'counterup',
-    'fancybox',
-    'perfect-scrollbar',
-    'slick',
-    'particles',
-    'particle-int',
-    'custom'
-         )
-    this.categories=CATEGORIES
-  }
+  { 
+   
+  this.categories=CATEGORIES
+}
+ //toggleCategoryDropdown() {
+ // this.showCategoryDropdown = !this.showCategoryDropdown;
+//}
+setCategory(i:any){
+ let indice= i;
+ this.yeoman.categorySelected=this.categories[indice].idCategory;
+ this.yeoman.virtualRoute="shop";
+// this.showCategoryDropdown = false;
+}
   setRoute(par:any){
     let parametro=par;
     this.yeoman.virtualRoute=parametro;

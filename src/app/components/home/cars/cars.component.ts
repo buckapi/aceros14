@@ -8,6 +8,7 @@ import { Yeoman } from '@app/services/yeoman.service';
 })
 export class CarsComponent implements OnInit {
 
+
   constructor(
     public yeoman:Yeoman
     ) { }
@@ -21,6 +22,7 @@ export class CarsComponent implements OnInit {
       console.log(JSON.stringify(preview));
       this.setRoute('checkout');
     }
+
   ngOnInit(): void {
   }
 
