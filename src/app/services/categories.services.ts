@@ -46,7 +46,7 @@ export const CATEGORIES: Category[] = [
    name:'Ferretería',  
    idCategory:'ca000007',
    images:[
-    'assets/aceros/images/resources/proj-img1-8.jpg'
+    'assets/aceros/images/resources/proj-img1-10.jpg'
   ]
  },
  {
@@ -60,7 +60,7 @@ export const CATEGORIES: Category[] = [
   name:'Accesorios para construcción',  
   idCategory:'ca000009',
   images:[
-    'assets/aceros/images/resources/proj-img1-10.jpg'
+    'assets/aceros/images/resources/proj-img1-8.jpg'
   ]
 }
  

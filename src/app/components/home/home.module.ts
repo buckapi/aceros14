@@ -10,6 +10,8 @@ import { ShopComponent } from './shop/shop.component';
 import { DetailComponent } from './detail/detail.component';
 import { AboutComponent } from './about/about.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { CarsComponent } from './cars/cars.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CategoriesComponent } from './categories/categories.component';
     ShopComponent,
     DetailComponent,
     AboutComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CarsComponent,
+    CheckoutComponent
   ],
   imports: [
     NgxUsefulSwiperModule,

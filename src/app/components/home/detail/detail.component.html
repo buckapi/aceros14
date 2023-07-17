@@ -23,8 +23,11 @@
                             <div>
                                 <div>
                                     <div>
-                                        <a  title="imagen de producto">
-                                            <img src="{{yeoman.preview.images[0]}}" alt="imagen de producto">
+                                        <a  title="">
+                                            <ng-container *ngIf="yeoman && yeoman.preview && yeoman.preview.images && yeoman.preview.images.length > 0">
+                                                <img [src]="yeoman.preview.images[0]" alt="">
+                                              </ng-container>
+                                              
                                         </a>
                                     </div>
                                     <!-- <div><a href="assets/aceros/images/resources/shop-detail-img1-2.jpg" data-fancybox="gallery" title=""><img class="img-fluid" src="assets/aceros/images/resources/shop-detail-img1-2.jpg" alt="Shop Detail Image 2"></a></div>
