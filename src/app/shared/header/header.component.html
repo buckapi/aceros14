@@ -22,8 +22,8 @@
                        
                     </div>
                 </div>
-                <div class="top-info-wrap d-inline-flex flex-wrap justify-content-between align-items-center">
-                    <div class="call-us">
+                <div class="top-info-wrap d-inline-flex flex-wrap justify-content-between align-items-center" [hidden]="yeoman.virtualRoute==='shop'">
+                    <div class="call-us" [hidden]="yeoman.virtualRoute==='shop'">
                         <i class="thm-clr flaticon-phone-call"></i>
                         <span>24/7 Atención al cliente</span>
                         <strong> <a href="tel:8267690870"> 8267690870 </a> </strong>
@@ -53,8 +53,10 @@
                         <li><a (click)="setRoute('contact')" style="cursor: pointer;" title="">Contacto</a></li>
                     </ul>
                 </div>
-                <div class="header-right-btns">
-                    <a class="get-quote" href="javascript:void(0);" title=""><i class="far fa-comments"></i>Chatear<i class="flaticon-arrow-pointing-to-right"></i></a>
+                <div class="header-right-btns" [hidden]="yeoman.virtualRoute==='shop'">
+                    <!-- <a class="get-quote" href="https://wa.me/+5218117788170?text=Hola!!%20Quiero%20comprar%20en%20Acero%20y%20más" title=""><i class="fab fa-whatsapp" style="    font-size: 30px;"></i>Atención personalizada<i class="flaticon-arrow-pointing-to-right"></i></a> -->
+                    <a class="get-quote" href="https://wa.me/+5218117788170?text=Hola!!%20Quiero%20comprar%20en%20Acero%20y%20más" title="">Atención personalizada<i class="fab fa-whatsapp" style="font-size:20px;"></i></a> 
+
                 </div>
             </nav>
         </div>

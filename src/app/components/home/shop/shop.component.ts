@@ -12,6 +12,7 @@ import { Category } from '@app/interfaces/category';
 export class ShopComponent implements OnInit {
 products:any=[];
 categories:any;
+category:any;
 //showCategoryDropdown: boolean = false;
 //selectedCategory: any=[];
   constructor(
@@ -21,16 +22,23 @@ categories:any;
    
   { 
    
-  this.categories=CATEGORIES
+  this.categories=CATEGORIES  
 }
  //toggleCategoryDropdown() {
  // this.showCategoryDropdown = !this.showCategoryDropdown;
 //}
-setCategory(i:any){
- let indice= i;
- this.yeoman.categorySelected=this.categories[indice].idCategory;
- this.yeoman.virtualRoute="shop";
-// this.showCategoryDropdown = false;
+setCategory(category: any) {
+  let id = category.idCategory;
+  // console.log("category recibida: "+id)
+  for (let i = 0; i < this.categories.length; i++) {
+    if (this.categories[i].idCategory === id) {
+      this.yeoman.categorySelected = this.categories[i].idCategory;
+      console.log("id Category: "+this.yeoman.categorySelected);
+      this.yeoman.virtualRoute = "shop";
+      // this.showCategoryDropdown = false;
+      break; // Terminamos el bucle ya que hemos encontrado el objeto
+    }
+  }
 }
   setRoute(par:any){
     let parametro=par;

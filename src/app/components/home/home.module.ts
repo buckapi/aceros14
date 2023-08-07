@@ -12,7 +12,8 @@ import { AboutComponent } from './about/about.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CarsComponent } from './cars/cars.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -26,6 +27,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     CheckoutComponent
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     NgxUsefulSwiperModule,
     CommonModule,
     HomeRoutingModule

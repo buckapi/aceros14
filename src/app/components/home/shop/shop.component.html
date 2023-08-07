@@ -1,44 +1,41 @@
 
-<app-categories></app-categories>
+<!-- <app-categories></app-categories> -->
 
-<section>
+<section style="margin-top: 100px;">
+    
     <div class="w-100 pt-100 pb-100 position-relative">
         <div class="container">
             <div class="shop-filters-pagination-wrap d-flex flex-wrap justify-content-between w-100">
-
-               
-
-                <div class="shop-filters d-inline-flex align-items-center">                    
-                       <!-- <div class="filter-inner">
-                            <button class="orange-button left-align" style="width: 100%; height: 100%;">
-                            <span class="category-label">Categoría:</span>
-                            <div class="select-wrapper">
-                              <select class="form-select"  *ngFor="let category of categories;  let i = index" (click)="setCategory(i)">
-                                <option>{{category.name}}</option>                           
-                              </select>
-                            </div>
-                            </button>
-                          </div>  -->
-    
-                   <!-- <div class="filter-inner">
-                      <button class="orange-button left-align" style="width: 100%; height: 100%;">
-                        <span class="category-label">Categoría:</span>
-                        <div class="select-wrapper">
-                          <select class="form-select" (click)="toggleCategoryDropdown()">
-                            <option selected disabled>{{ selectedCategory ? selectedCategory.name : 'Seleccione una categoría' }}</option>
-                            <ng-container *ngIf="showCategoryDropdown">
-                              <option *ngFor="let category of categories" (click)="setCategory(category)">{{category.name}}</option>
-                            </ng-container>
-                          </select>
-                        </div>
-                      </button>
-                    </div>-->
-                </div> 
+                <!-- <div class="filter-inner">
+                    <span>View as:</span>
+                    <a href="javascript:void(0);" title=""><i class="fas fa-th-large"></i></a>
+                    <a href="javascript:void(0);" title=""><i class="fas fa-th-list"></i></a>
+                </div> -->
+                <div class="filter-inner">
+                    <span>Categoría:</span>
+                    <div >
+                        <!-- <select>
+                            <option *ngFor="let category of categories;let i as index" (click)="setCategory(i)">{{category.name}}</option>
+                           
+                        </select> -->
+                        <select  class="form-control wide my-custom-select"[(ngModel)]="category" (ngModelChange)="setCategory(category)" [ngModelOptions]="{standalone: true}">
+                            <option *ngFor="let category of categories;let i = index" [ngValue]="category"> <span   style="cursor:pointer;">{{category.name}}</span></option>
+                        </select>
+                    </div>
                   
-                <button class="orange-button left-align">  <a  title="">Ver todos</a>
-
-                </button>
+                </div>
+                <!-- <div class="filter-inner">
+                    <span>Show:</span>
+                    <div class="slc-wrp">
+                        <select>
+                            <option>11</option>
+                            <option>22</option>
+                            <option>33</option>
+                        </select>
+                    </div>
+                </div> -->
             </div>
+         
             <div class="shop-wrap w-100">
                 <div class="row">
                     <div class="col-6 col-lg-3" *ngFor="let product of yeoman.products, let i = index "  style="cursor: pointer;"(click)="view(i)" [hidden]="yeoman.categorySelected!=product.idBranch && yeoman.categorySelected!='first'">
