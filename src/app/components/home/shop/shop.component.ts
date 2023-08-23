@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Yeoman } from '@app/services/yeoman.service';
 import { RestService } from '@app/services/rest.service';
-import { CATEGORIES } from '@app/services/categories.services';
+
 import { Category } from '@app/interfaces/category';
 
 @Component({
@@ -21,8 +21,8 @@ category:any;
   ) 
    
   { 
-   
-  this.categories=CATEGORIES  
+   this.loadCategories();
+
 }
  //toggleCategoryDropdown() {
  // this.showCategoryDropdown = !this.showCategoryDropdown;
@@ -60,6 +60,11 @@ setCategory(category: any) {
 //   });
 
 // }
+loadCategories(){
+  this.restService.getAllCategory().subscribe(response=>{
+    this.categories=response;
+  });
+}
 
   ngOnInit(): void {
   }

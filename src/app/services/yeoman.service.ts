@@ -10,5 +10,20 @@ export class Yeoman {
   products:any=[];
   preview:any={};
   categories:any={};
+  allcategory:any=[];
+  allCategoriesSize:number=0;
+
+  config: {
+    clientSelected:number;
+  } = {clientSelected:-1} ;
+  origin: {
+    name: string;
+    restUrl: string;
+    GQLUrl: string;
+  } = {
+    name: "default",
+    restUrl: "https://db.buckapi.us:9010",
+    GQLUrl: "<origin GQL url>",
+  };
   constructor() { }
 }

@@ -92,16 +92,16 @@ export class RestService {
 	//  	},{headers}).toPromise();
 
 	//  }
-	charge(amount: any, buy_order: any){
-		const headers = new HttpHeaders({
-			// 'Content-Type': 'application/json',
-			'Content-Type': 'application/json',
-			'Access-Control-Allow-Origin': 'https://app.zofricars.com',
-			'Access-Control-Allow-Methods': 'GET, POST'
-		});
-		const url = `https://www.zofricars.com/tbk/integrator_webpay_rest_api.php?amount=${amount}&buy_order=${buy_order}`;
-		return this.http.get(url).toPromise();
-	}
+	// charge(amount: any, buy_order: any){
+	// 	const headers = new HttpHeaders({
+	// 		// 'Content-Type': 'application/json',
+	// 		'Content-Type': 'application/json',
+	// 		'Access-Control-Allow-Origin': 'https://app.zofricars.com',
+	// 		'Access-Control-Allow-Methods': 'GET, POST'
+	// 	});
+	// 	const url = `https://www.zofricars.com/tbk/integrator_webpay_rest_api.php?amount=${amount}&buy_order=${buy_order}`;
+	// 	return this.http.get(url).toPromise();
+	// }
 	getAllBranchs(){
 		const url_api = this.url+'/api/branchs';
 		return this.http.get(url_api);
@@ -120,14 +120,16 @@ export class RestService {
 	}
     getAllProducts(){
 		const url_api =  this.url+'/api/products';
-       
 		return this.http.get(url_api);
-
 	}
 	
-	
-	getAllCategories(){
-		const url_api =  this.url+'/api/cards';
+	// getAllCategories(){
+	// 	const url_api =  this.url+'/api/cards';
+	// 	return this.http.get(url_api);
+	// }
+
+	getAllCategory(){
+		const url_api = this.yeoman.origin.restUrl+'/api/categories';
 		return this.http.get(url_api);
 	}
 	getAllTransactions(){

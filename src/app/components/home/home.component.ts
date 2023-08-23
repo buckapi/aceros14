@@ -34,9 +34,9 @@ export class HomeComponent implements AfterViewInit {
           .then(data => {
             // this.yeoman.isLoaded=true;
           })
-          .catch(error => console.log(error)); 
-          
-   this.restService.getAllProducts().subscribe((response:any) => {
+          .catch(error => console.log(error));  
+                  
+    this.restService.getAllProducts().subscribe((response:any) => {
     console.log(response);
     this.yeoman.products=response;
   }) ;   4
