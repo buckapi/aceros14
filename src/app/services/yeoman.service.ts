@@ -12,6 +12,7 @@ export class Yeoman {
   categories:any={};
   allcategory:any=[];
   allCategoriesSize:number=0;
+  cart:any;
 
   config: {
     clientSelected:number;

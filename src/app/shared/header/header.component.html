@@ -32,7 +32,7 @@
                         <a href="#" title="">
                             <i class="thm-bg fas fa-shopping-basket"></i>
                             Carro
-                            <span class="d-block">0</span>
+                            <span class="d-block" id="cart-quantity">0</span>
                         </a>
                     </div>
                 </div>                            
@@ -52,13 +52,17 @@
                         </li>
                         <li><a (click)="setRoute('contact')" style="cursor: pointer;" title="">Contacto</a></li>
                     </ul>
+                    
                 </div>
+                
                 <div class="header-right-btns" [hidden]="yeoman.virtualRoute==='shop'">
                     <!-- <a class="get-quote" href="https://wa.me/+5218117788170?text=Hola!!%20Quiero%20comprar%20en%20Acero%20y%20más" title=""><i class="fab fa-whatsapp" style="    font-size: 30px;"></i>Atención personalizada<i class="flaticon-arrow-pointing-to-right"></i></a> -->
                     <a class="get-quote" href="https://wa.me/+5218117788170?text=Hola!!%20Quiero%20comprar%20en%20Acero%20y%20más" title="">Atención personalizada<i class="fab fa-whatsapp" style="font-size:20px;"></i></a> 
 
                 </div>
+                
             </nav>
+            
         </div>
     </div><!-- Menu Wrap -->
 </header><!-- Header -->

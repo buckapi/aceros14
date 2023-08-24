@@ -26,5 +26,8 @@ export class DetailComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.cdr.detectChanges();
   }
+ add ( product:any) {
+  this.yeoman.cart.push(product);
+ }
 
 }
